@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+
+  web:
+    image: nginx:1.20.1-alpine
+    volumes:
+      - ./templates:/etc/nginx/templates
+      - ../www:/var/www
+    ports:
+      - "8080:80"
