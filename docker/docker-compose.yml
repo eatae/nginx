@@ -8,4 +8,5 @@ services:
       - ./templates:/etc/nginx/templates
       - ../www:/var/www
     ports:
-      - "8080:80"
+      - "8090:80"
+      - "8091:8091"
